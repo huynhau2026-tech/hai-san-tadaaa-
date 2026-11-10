@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hải Sản TaDaaa - Đặc Sản Cua 2 Da & Hải Sản Tươi Sống 100%</title>
+    <meta name="description" content="Hải Sản TaDaaa chuyên cung cấp Cua 2 da (cua cốm) đặc sản chuẩn Cà Mau, cua biển, ghẹ xanh, tôm sú, mực trứng, cá biển tươi sống 100%. Giao hàng tận nơi nhanh chóng. Liên hệ Minh Vũ: 0372360368.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'] },
+                    colors: {
+                        ocean: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#0284c7', 800: '#075985', 900: '#0c4a6e' },
+                        coral: { 500: '#f97316', 600: '#ea580c', 700: '#c2410c' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 0.8; }
+            100% { transform: scale(2.2); opacity: 0; }
+        }
+        .pulse-effect::before {
+            content: ''; position: absolute; inset: 0; border-radius: 9999px;
+            background-color: inherit; animation: pulse-ring 1.8s infinite; z-index: -1;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(12, 74, 110, 0.92), rgba(12, 74, 110, 0.65)), url('https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- TOP BAR -->
+    <div class="bg-ocean-900 text-sky-100 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div><i class="fa-solid fa-water text-coral-500 mr-1.5"></i> Cam kết Hải Sản Tươi Sống 100% - Bao ăn từng con</div>
+            <div class="flex items-center space-x-4 font-medium">
+                <span><i class="fa-solid fa-user-check text-coral-500 mr-1"></i> Đại diện: <strong>Minh Vũ</strong></span>
+                <a href="tel:0372360368" class="text-amber-400 hover:underline font-bold"><i class="fa-solid fa-phone-volume mr-1"></i> 0372.360.368</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-coral-500 to-red-600 flex items-center justify-center text-white text-2xl shadow-lg">
+                    <i class="fa-solid fa-shrimp"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight text-ocean-900">Hải Sản <span class="text-coral-600">TaDaaa</span></span>
+                    <p class="text-[11px] font-semibold uppercase tracking-wider text-slate-500">Tươi ngon từ biển cả</p>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700">
+                <a href="#gioi-thieu" class="hover:text-coral-600 transition">Giới thiệu</a>
+                <a href="#san-pham" class="text-coral-600 font-bold"><i class="fa-solid fa-fire mr-1"></i> Đặc sản Cua 2 Da</a>
+                <a href="#san-pham" class="hover:text-coral-600 transition">Thực đơn Hải sản</a>
+                <a href="#dat-hang" class="hover:text-coral-600 transition">Đặt hàng nhanh</a>
+            </nav>
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="https://zalo.me/0372360368" target="_blank" class="px-3.5 py-2.5 rounded-xl bg-blue-50 text-blue-600 font-bold hover:bg-blue-100 transition text-sm">
+                    Chat Zalo
+                </a>
+                <a href="tel:0372360368" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-coral-500 to-red-600 text-white font-bold shadow-lg text-sm">
+                    <i class="fa-solid fa-phone-volume mr-1"></i> 0372.360.368
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section id="gioi-thieu" class="hero-bg relative text-white py-16 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coral-500/20 border border-coral-500/40 text-amber-300 text-sm font-semibold">
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span> Đặc Sản Trứ Danh Tại Hải Sản TaDaaa
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+                    Vua Đặc Sản <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-red-400">Cua 2 Da (Cua Cốm)</span>
+                    <br>Tươi Sống Mỗi Ngày!
+                </h1>
+                <p class="text-lg text-sky-100/90 max-w-2xl leading-relaxed">
+                    Thưởng thức trọn vẹn vị ngọt thanh của thịt cua chắc nịch, lớp vỏ mềm giòn giàu canxi cùng lớp gạch son béo ngậy. <strong>Hải Sản TaDaaa</strong> tuyển chọn từng con cua 2 da, ghẹ, tôm, mực, cá tươi sống 100% giao tận bàn ăn gia đình bạn.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#dat-hang" class="px-8 py-4 rounded-2xl bg-gradient-to-r from-coral-500 to-red-600 text-white font-bold text-lg shadow-xl hover:scale-105 transition">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i> Đặt Mua Cua 2 Da Ngay
+                    </a>
+                    <a href="#san-pham" class="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-lg transition">
+                        Xem Bảng Giá Hải Sản
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5">
+                <div class="relative bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20 shadow-2xl">
+                    <div class="absolute -top-4 -right-4 bg-red-600 text-white font-extrabold px-4 py-2 rounded-2xl shadow-lg text-sm">
+                        <i class="fa-solid fa-crown text-amber-300 mr-1"></i> Best Seller
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=900&q=80" alt="Cua 2 da Hải Sản TaDaaa" class="w-full h-72 object-cover rounded-2xl mb-4">
+                    <h2 class="text-2xl font-bold text-white">Cua 2 Da (Cua Cốm) Loại 1</h2>
+                    <p class="text-sky-100 text-sm mt-1">Đang kỳ lột vỏ, để lộ lớp da non mềm, đầy ắp gạch vàng béo ngậy và thịt ngọt gấp đôi cua thường.</p>
+                    <div class="mt-4 pt-3 flex items-center justify-between border-t border-white/15">
+                        <span class="text-lg font-extrabold text-amber-300">Hotline: 0372.360.368 (Minh Vũ)</span>
+                        <a href="#dat-hang" onclick="selectProduct('Cua 2 Da (Cua Cốm) Tuyển Chọn')" class="px-4 py-2 rounded-xl bg-amber-400 text-slate-900 font-bold text-sm">Đặt Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DANH MỤC SẢN PHẨM -->
+    <section id="san-pham" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-coral-600 font-bold text-sm uppercase tracking-widest">Thực Đơn Hôm Nay</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-ocean-900 mt-1">Danh Mục Hải Sản Tươi Sống</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- SP 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border-2 border-coral-500 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=700&q=80" alt="Cua 2 Da" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">ĐẶC SẢN CHỦ LỰC</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Cua 2 Da (Cua Cốm) Tuyển Chọn</h3>
+                        <p class="text-slate-500 text-sm mt-1">Cua sống khỏe, full gạch vàng béo ngậy, lớp da non mềm giòn, thịt ngọt đậm đà. Bao ăn 1 đổi 1.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">650.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Cua 2 Da (Cua Cốm) Tuyển Chọn')" class="px-5 py-2.5 rounded-xl bg-coral-600 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=700&q=80" alt="Cua Thịt Cua Gạch" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-ocean-800 text-white text-xs font-bold px-3 py-1 rounded-full">Dây không trọng lượng</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Cua Thịt & Cua Gạch Son</h3>
+                        <p class="text-slate-500 text-sm mt-1">Cua biển thiên nhiên càng to khỏe, thịt chắc từng thớ, cua gạch son đầy ắp mai.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">480.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Cua Thịt & Cua Gạch Son')" class="px-5 py-2.5 rounded-xl bg-ocean-900 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=80" alt="Ghẹ Xanh" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">Đang bơi tại hồ</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Ghẹ Xanh Biển Loại 1</h3>
+                        <p class="text-slate-500 text-sm mt-1">Ghẹ xanh tươi sống bơi khỏe, size 4-5 con/kg. Thịt ghẹ trắng ngần, ngọt thanh.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">520.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Ghẹ Xanh Biển Loại 1')" class="px-5 py-2.5 rounded-xl bg-ocean-900 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP 4 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=700&q=80" alt="Tôm Sú" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">Tươi sống 100%</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Tôm Sú Biển & Tôm Càng Xanh</h3>
+                        <p class="text-slate-500 text-sm mt-1">Tôm nhảy tanh tách, vỏ bóng giòn, thịt săn chắc ngọt lịm. Nướng muối ớt, hấp dừa cực ngon.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">420.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Tôm Sú Biển & Tôm Càng Xanh')" class="px-5 py-2.5 rounded-xl bg-ocean-900 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP 5 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=700&q=80" alt="Mực Trứng" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-ocean-800 text-white text-xs font-bold px-3 py-1 rounded-full">Mực câu trong ngày</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Mực Trứng & Mực Lá Câu Nháy</h3>
+                        <p class="text-slate-500 text-sm mt-1">Mực câu trực tiếp từ ghe, mình dày giòn sần sật, mực trứng ôm full bụng béo bùi.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">360.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Mực Trứng & Mực Lá Câu Nháy')" class="px-5 py-2.5 rounded-xl bg-ocean-900 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP 6 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=700&q=80" alt="Cá Biển" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">Hỗ trợ làm sạch</span>
+                        <h3 class="text-xl font-extrabold text-ocean-900 mt-3">Cá Mú Đen & Cá Biển Bơi Hồ</h3>
+                        <p class="text-slate-500 text-sm mt-1">Cá biển tươi sống bắt trực tiếp từ hồ, thịt trắng thơm dai, chưng tương hoặc nấu lẩu.</p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t flex items-center justify-between">
+                        <span class="text-xl font-extrabold text-coral-600">390.000đ/kg</span>
+                        <a href="#dat-hang" onclick="selectProduct('Cá Mú Đen & Cá Biển Bơi Hồ')" class="px-5 py-2.5 rounded-xl bg-ocean-900 text-white font-bold text-sm">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM ĐẶT HÀNG NHANH -->
+    <section id="dat-hang" class="py-16 bg-ocean-900 text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white text-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                <h2 class="text-3xl font-extrabold text-ocean-900 mb-2">Đặt Hàng Nhanh - Hải Sản TaDaaa</h2>
+                <p class="text-slate-500 text-sm mb-6">Đại diện <strong>Minh Vũ (0372.360.368)</strong> sẽ liên hệ xác nhận ngay và giao tận nơi siêu tốc!</p>
+                <form id="orderForm" class="space-y-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <input type="text" id="name" required placeholder="Họ và tên của bạn *" class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none focus:border-coral-500">
+                        <input type="tel" id="phone" required placeholder="Số điện thoại / Zalo *" class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none focus:border-coral-500">
+                    </div>
+                    <select id="product" class="w-full px-4 py-3 rounded-xl border border-slate-200 font-semibold outline-none focus:border-coral-500">
+                        <option value="Cua 2 Da (Cua Cốm) Tuyển Chọn">🔥 Đặc sản Cua 2 Da (Cua Cốm) Tuyển Chọn</option>
+                        <option value="Cua Thịt & Cua Gạch Son">🦀 Cua Thịt & Cua Gạch Son</option>
+                        <option value="Ghẹ Xanh Biển Loại 1">🦀 Ghẹ Xanh Biển Loại 1</option>
+                        <option value="Tôm Sú Biển & Tôm Càng Xanh">🦐 Tôm Sú Biển & Tôm Càng Xanh</option>
+                        <option value="Mực Trứng & Mực Lá Câu Nháy">🦑 Mực Trứng & Mực Lá Câu Nháy</option>
+                        <option value="Cá Mú Đen & Cá Biển Bơi Hồ">🐟 Cá Mú Đen & Cá Biển Bơi Hồ</option>
+                    </select>
+                    <input type="text" id="address" required placeholder="Địa chỉ nhận hàng chi tiết *" class="w-full px-4 py-3 rounded-xl border border-slate-200 outline-none focus:border-coral-500">
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-coral-500 to-red-600 text-white font-extrabold text-lg shadow-lg hover:opacity-95 transition">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> GỬI ĐƠN ĐẶT HÀNG NGAY
+                    </button>
+                </form>
+                <div id="successMsg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-semibold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 text-center text-sm">
+        <p class="text-white font-extrabold text-xl">HẢI SẢN TADAAA - TƯƠI SỐNG 100%</p>
+        <p class="mt-2">Người phụ trách / Đại diện: <strong class="text-white">Minh Vũ</strong> | Hotline / Zalo: <a href="tel:0372360368" class="text-amber-400 font-bold">0372.360.368</a></p>
+        <p class="mt-4 text-xs text-slate-600">© 2026 Hải Sản TaDaaa. Cam kết chất lượng tươi sống 100% - Bao ăn 1 đổi 1.</p>
+    </footer>
+
+    <!-- NÚT GỌI & ZALO NỔI -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+        <a href="https://zalo.me/0372360368" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-xl font-bold text-sm flex items-center gap-2">
+            <i class="fa-solid fa-comment-dots"></i> Chat Zalo Minh Vũ
+        </a>
+        <a href="tel:0372360368" class="relative pulse-effect bg-gradient-to-r from-red-600 to-coral-500 text-white px-5 py-3.5 rounded-full shadow-2xl font-extrabold flex items-center gap-2">
+            <i class="fa-solid fa-phone-volume animate-bounce"></i> 0372.360.368
+        </a>
+    </div>
+
+    <script>
+        function selectProduct(name) { document.getElementById('product').value = name; }
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const msg = document.getElementById('successMsg');
+            msg.classList.remove('hidden');
+            msg.innerHTML = '✅ Đã ghi nhận đơn hàng! Đang mở Zalo Minh Vũ (0372360368) để xác nhận nhanh...';
+            setTimeout(() => { window.open('https://zalo.me/0372360368', '_blank'); }, 1200);
+        });
+    </script>
+</body>
+</html>
